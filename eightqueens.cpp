@@ -13,7 +13,7 @@ class Options{
         int options[9] = {0, 0, 0, 0, 0, 0, 0, -1};
 };
 
-Options generate_options(int perm[8]){ // Find numbers from 0 to 7 not included in perm
+Options generate_options(int perm[8]){ // Find numbers from 0 to 7 NOT included in perm
     Options options;
     int potential_entries[8] = {0, 1, 2, 3, 4, 5, 6, 7};
     for(int i = 0; i < 8; i++){
@@ -95,9 +95,5 @@ int main(void){
 
     cout << "Total positions tested: " << total_perms << endl;
     cout << "Total peaceful positions found: " << total_soluions << endl;
-    //dsugger
-    //dsugga
-    //tsatter
-    cout << " hello world";
 
 }
