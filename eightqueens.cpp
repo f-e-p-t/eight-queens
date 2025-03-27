@@ -1,8 +1,4 @@
 #include<iostream>
-#include<string.h>
-#include<unordered_map>
-#include<random>
-#include<algorithm>
 using namespace std;
 
 int perm[8] = {-1, -1, -1, -1, -1, -1, -1, -1};
@@ -12,6 +8,8 @@ class Options{
     public:
         int options[9] = {0, 0, 0, 0, 0, 0, 0, -1};
 };
+
+// ------------------------------------ Queen placements generation ------------------------------------
 
 Options generate_options(int perm[8]){ // Find numbers from 0 to 7 NOT included in perm
     Options options;
@@ -27,8 +25,6 @@ Options generate_options(int perm[8]){ // Find numbers from 0 to 7 NOT included 
     }
     for(int i = 0; j + i < 9; i++){
         options.options[j + i] = -1;
-    }
-    for(int i = 0; i < 9; i++){
     }
     return options;
 }
