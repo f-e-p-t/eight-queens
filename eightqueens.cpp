@@ -95,5 +95,9 @@ int main(void){
 
     cout << "Total positions tested: " << total_perms << endl;
     cout << "Total peaceful positions found: " << total_soluions << endl;
+    //dsugger
+    //dsugga
+    //tsatter
+    cout << " hello world";
 
 }
